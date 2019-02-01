@@ -23,5 +23,3 @@ SQLALCHEMY_TRACK_MODIFICATIONS = ENV == 'development'
 #  Praetorian Auth Token Settings
 JWT_ACCESS_LIFESPAN = {'hours': 24}
 JWT_REFRESH_LIFESPAN = {'days': 30}
-
-URL_PREFIX = '/api'
