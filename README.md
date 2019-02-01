@@ -33,9 +33,10 @@ import requests
 login_url = 'http://localhost:5000/login'
 url = 'http://localhost:5000/api/v1/markovchain'
 
-login_payload = {'username': 'wally', 'password': 'west'}
-login_request = requests.post(login_url, json=login_payload).json()
-access_token = login_request['access_token']
+creds = requests.post(
+    login_url,
+    json={'username': 'wally', 'password': 'west'}
+).json()
 
 transition_matrix = [
     [0.8, 0.19, 0.01],
@@ -54,7 +55,7 @@ payload = {
 }
 
 headers = {
-    'Authorization': "Bearer " + access_token
+    'Authorization': "Bearer " + creds['access_token']
 }
 
 r = requests.get(url, data=payload, headers=headers).json()
