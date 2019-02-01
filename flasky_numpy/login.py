@@ -13,7 +13,13 @@ def login():
 
     .. example::
        $ curl http://localhost:5000/login -X POST \
-         -d '{"username":"Walter","password":"calmerthanyouare"}'
+         -d '{"username":"wally","password":"west"}'
+
+    .. example::
+        creds = requests.post(
+            login_url,
+            json={'username': 'wally', 'password': 'west'}
+        ).json()
     """
     req = request.get_json(force=True)
     username = req.get('username', None)
