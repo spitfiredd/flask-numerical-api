@@ -1,32 +1,8 @@
-# Flask API for Numerical Computing
+'''Example script, flask server must be up and running
+first, then run this script in a separate shell (if developing
+locally).
+'''
 
-Simple exmaple for numerical restAPI endpoints.
-
-## Getting Started
-
-Make sure pipenv is install and run `pipenv install` to get your env up and running.
-
-Set Flask CLI Env viables, on windows,
-
-```
-set FLASK_APP=flasky_numpy.app
-set FLASK_ENV=development
-```
-
-Run `flask shell` and then,
-
-```
->>> db.create_all()
->>> user = User(username='wally', password='west')
->>> db.session.add(user)
->>> db.session.commit()
-```
-
-Start flask app with `flask run`, head to `http://localhost:5000/api/people/`.
-
-In a separate script (or copy/paste to a separate terminal session),
-
-```
 import json
 import requests
 
@@ -60,4 +36,3 @@ headers = {
 
 r = requests.get(url, data=payload, headers=headers).json()
 print(r)
-```
