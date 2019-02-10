@@ -16,12 +16,12 @@ creds = requests.post(
 
 transition_matrix = [
     [0.8, 0.19, 0.01],
-    [0.2,  0.7,  0.1],
-    [0.1,  0.2,  0.7]
+    [0.2, 0.7, 0.1],
+    [0.1, 0.2, 0.7]
 ]
-states=['Sunny', 'Rainy', 'Snowy']
-current_state='Sunny'
-num_obs=10
+states = ['Sunny', 'Rainy', 'Snowy']
+current_state = 'Sunny'
+num_obs = 10
 
 payload = {
     'transition_matrix': json.dumps(transition_matrix),
