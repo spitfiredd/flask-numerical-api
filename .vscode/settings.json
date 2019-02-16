@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\spitf\\.virtualenvs\\flask-numpy-_D1yQsQa\\Scripts\\python.exe",
+    "python.pythonPath": "C:\\Users\\spitf\\.virtualenvs\\flask-numpy-vb1OeQwY\\Scripts\\python.exe",
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": [
         "--ignore=E501,E309" 
